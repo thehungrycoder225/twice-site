@@ -3,19 +3,32 @@
     font-family: "Oswald";
 }
 
+@font-face {
+    src: url("../fonts/NoirStd-Regular.ttf");
+    font-family: 'Noir';
+}
+
+@font-face {
+    src: url("../fonts/Joane.ttf");
+    font-family: 'Joane';
+}
+
 .nav-items a {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Joane', sans-serif;
     font-size: 1.8rem;
 }
 
 .intro-content {
     h1 {
+        color: #2F260D;
         letter-spacing: 1.5rem;
         font-size: 7rem;
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Joane', sans-serif;
     }
 }
 
 h3 {
     font-size: 5rem;
+    font-family: 'Joane', sans-serif;
+    letter-spacing: 1rem;
 }

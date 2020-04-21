@@ -1,4 +1,6 @@
 #main-header {
+    background: #1D1307;
+    box-shadow: 0px 2px 2px #6F512B;
     min-height: 10vh;
     display: flex;
     flex-flow: row wrap;
@@ -12,8 +14,6 @@
 .logo {
     flex: 1 1 40rem;
     padding: 1rem;
-
-
 }
 
 .logo-circle-outer {
@@ -47,6 +47,7 @@
 }
 
 #main-nav {
+
     margin: auto;
     width: 90%;
     display: flex;
@@ -55,11 +56,12 @@
 
 
     .nav-items a {
-        color: #ff2a3f;
-        transition: 0.5s all ease-in-out;
+        color: #fcc4ae;
+        transition: 0.3s all ease-in-out;
 
         &:hover {
-            color: #eeb544;
+            color: tomato;
         }
+
     }
 }

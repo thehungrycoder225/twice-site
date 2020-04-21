@@ -25,22 +25,38 @@ a {
   font-family: "Oswald";
 }
 
+@font-face {
+  src: url("../fonts/NoirStd-Regular.ttf");
+  font-family: 'Noir';
+}
+
+@font-face {
+  src: url("../fonts/Joane.ttf");
+  font-family: 'Joane';
+}
+
 .nav-items a {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Joane', sans-serif;
   font-size: 1.8rem;
 }
 
 .intro-content h1 {
+  color: #2F260D;
   letter-spacing: 1.5rem;
   font-size: 7rem;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Joane', sans-serif;
 }
 
 h3 {
   font-size: 5rem;
+  font-family: 'Joane', sans-serif;
+  letter-spacing: 1rem;
 }
 
 #main-header {
+  background: #1D1307;
+  -webkit-box-shadow: 0px 2px 2px #6F512B;
+          box-shadow: 0px 2px 2px #6F512B;
   min-height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,13 +132,13 @@ h3 {
 }
 
 #main-nav .nav-items a {
-  color: #ff2a3f;
-  -webkit-transition: 0.5s all ease-in-out;
-  transition: 0.5s all ease-in-out;
+  color: #fcc4ae;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 #main-nav .nav-items a:hover {
-  color: #eeb544;
+  color: tomato;
 }
 
 #intro-section {
@@ -149,7 +165,7 @@ h3 {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgba(44, 44, 44, 0.5);
+  background-color: rgba(53, 41, 15, 0.5);
 }
 
 .intro-video {
@@ -187,11 +203,10 @@ h3 {
 .intro-content .intro-link {
   -webkit-animation: introLink 1s 2s forwards ease-in;
           animation: introLink 1s 2s forwards ease-in;
-  border: 0.5rem solid #fc263b;
-  border-radius: 0.5rem;
-  color: #fc263b;
+  border: 0.3rem solid #EEC5CB;
+  color: #EEC5CB;
   font-size: 1.5rem;
-  font-family: 'Google Sans';
+  font-family: 'Noir';
   padding: 1rem 5rem;
   display: inline-block;
   -webkit-transition: all 0.5s ease-in-out;
@@ -200,8 +215,8 @@ h3 {
 }
 
 .intro-content .intro-link:hover {
-  color: #c2c2c2;
-  background-color: #fc263b;
+  color: #2F260D;
+  background-color: #EEC5CB;
 }
 
 #intro-gallery {
@@ -219,6 +234,8 @@ h3 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  background-color: #35290F;
+  overflow: hidden;
 }
 
 #intro-gallery hr {
@@ -233,43 +250,66 @@ h3 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
+  color: #EEC5CB;
+}
+
+.gallery_3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.gallery_4 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+}
+
+.gallery_5 {
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  -ms-grid-column: 3;
+  grid-column: 3/3;
 }
 
 .gallery-image-container {
+  min-width: 90%;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
-  justify-items: center;
-  gap: 15px 10px;
-  width: 90%;
-  padding: 2rem;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
 }
 
-.gallery-images {
-  text-align: center;
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
-}
-
-.gallery-images img {
-  border-radius: 50%;
-  border: none;
+.gallery-image-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #eec5cb;
   -webkit-box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.5);
           box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.5);
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
 
-.gallery-images img:hover {
+.gallery-image-container img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  border: 0.5rem solid rgba(238, 181, 68, 0.8);
+}
+
+#discography-section {
+  min-height: 100vh;
+}
+
+.discography-content {
+  width: 90%;
 }
 
 @-webkit-keyframes introAnimate {
@@ -317,7 +357,7 @@ h3 {
     -webkit-transform: translate(0%, 100%);
             transform: translate(0%, 100%);
     font-size: 20rem;
-    -webkit-text-fill-color: #c2c2c2;
+    -webkit-text-fill-color: #fdcbbc;
   }
 }
 
@@ -330,7 +370,7 @@ h3 {
     -webkit-transform: translate(0%, 100%);
             transform: translate(0%, 100%);
     font-size: 20rem;
-    -webkit-text-fill-color: #c2c2c2;
+    -webkit-text-fill-color: #fdcbbc;
   }
 }
 
