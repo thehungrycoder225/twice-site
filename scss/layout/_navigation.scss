@@ -1,0 +1,70 @@
+#main-header {
+    min-height: 10vh;
+    position: sticky;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    font-family: "Oswald", sans-serif;
+}
+
+.logo {
+    flex: 1 1 40rem;
+    padding: 1rem;
+}
+.logo-circle-outer {
+    position: relative;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #fc263b, #eeb544);
+    background-size: 200% 200%;
+    animation: logoRotate 3s infinite ease;
+}
+.logo-circle-inner {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: $dark;
+    transform: translate(25%, 25%);
+
+    img {
+        width: 2.5rem;
+        transform: translate(50%, 45%);
+        position: relative;
+        z-index: 2;
+    }
+}
+
+#main-nav {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex: 2 1 40rem;
+
+    .nav-items a {
+        color: #ff2a3f;
+        font-size: 1.8rem;
+        transition: 0.5s all ease-in-out;
+
+        &:hover {
+            color: #eeb544;
+        }
+    }
+}
+
+@keyframes logoRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
