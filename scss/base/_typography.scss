@@ -1,0 +1,21 @@
+@font-face {
+    src: url("../fonts/Oswald-VariableFont_wght.ttf");
+    font-family: "Oswald";
+}
+
+.nav-items a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+}
+
+.intro-content {
+    h1 {
+        letter-spacing: 1.5rem;
+        font-size: 7rem;
+        font-family: 'Oswald', sans-serif;
+    }
+}
+
+h3 {
+    font-size: 5rem;
+}

@@ -1,1 +1,4 @@
+*.json
+*.vscode
 video/*
+node_modules/*
