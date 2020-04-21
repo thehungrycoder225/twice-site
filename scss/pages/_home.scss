@@ -125,18 +125,28 @@ h3 {
     }
 }
 
-
-
-
-
-
-
 #discography-section {
     min-height: 100vh;
+
+    @include flex(row, wrap, center, center);
+
+    h3 {
+        color: #6F512B;
+    }
+
 }
 
 .discography-content {
     width: 90%;
+    margin: auto;
+    @include flex(row, wrap, center, center);
+    text-align: center;
+
+    img {
+        width: 25rem;
+        object-fit: cover;
+        padding: 2rem 1rem;
+    }
 }
 
 
