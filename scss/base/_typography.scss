@@ -13,22 +13,100 @@
     font-family: 'Joane';
 }
 
+// Navigation 
+
+
 .nav-items a {
-    font-family: 'Joane', sans-serif;
+    color: #FCB8B8;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.8rem;
+
+    &:hover {
+        color: tomato;
+    }
+
+}
+
+// Intro
+
+.intro-link {
+    color: #fcb8b8;
+    font-size: 1.5rem;
+    font-family: 'Oswald';
+
+    &:hover {
+        color: #5e0000;
+    }
 }
 
 .intro-content {
     h1 {
-        color: #2F260D;
+        color: #202040;
         letter-spacing: 1.5rem;
         font-size: 7rem;
-        font-family: 'Joane', sans-serif;
+        font-family: 'Oswald', sans-serif;
     }
 }
 
 h3 {
+    color: #fcb8b8;
     font-size: 5rem;
-    font-family: 'Joane', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     letter-spacing: 1rem;
+
+}
+
+// Discography
+
+
+#discography-section {
+    h3 {
+        color: #fcb8b8;
+    }
+}
+
+// Bulletin
+
+#bulletin-section {
+    h1 {
+        font-size: 5rem;
+        font-family: 'Oswald';
+        letter-spacing: 1rem;
+        color: #522D5B;
+    }
+}
+
+// Team 
+
+#team-section {
+
+    h1 {
+        font-size: 10rem;
+        font-family: 'Oswald';
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        color: #522D5B;
+    }
+
+    label {
+        font-size: 4rem;
+        font-family: 'Oswald';
+        letter-spacing: 0.5rem;
+    }
+
+    button {
+        color: #EEC5CB;
+        font-family: 'Oswald';
+        font-size: 2rem;
+
+    }
+}
+
+//Footer
+
+.footer-title,
+.footer-social-links {
+    color: #EEC5CB;
+    letter-spacing: 0.5rem;
+    font-family: 'Oswald', sans-serif;
 }
