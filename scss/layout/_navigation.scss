@@ -4,6 +4,8 @@
     box-shadow: 0px 2px 10px #e7d39f;
     min-height: 10vh;
     z-index: 100;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -41,7 +43,7 @@
     }
 }
 
-#main-nav {
+.nav-links {
 
     margin: auto;
     width: 90%;
@@ -50,9 +52,7 @@
     flex: 2 1 40rem;
 
 
-    .nav-items a {
-
+    a {
         transition: 0.3s all ease-in-out;
-
     }
 }

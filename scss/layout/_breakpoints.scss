@@ -1,0 +1,52 @@
+@media screen and (max-width:1024px) {
+    #intro-section {
+        width: 100%;
+        margin: auto;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.527)), url('../../img/bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+
+        .intro-video-overlay,
+        .intro-video {
+            display: none;
+        }
+    }
+
+    #bulletin-section {
+        overflow: hidden;
+        text-align: center;
+
+        img {
+            display: none;
+
+        }
+
+        h1 {
+            font-size: calc(4rem + 2vw);
+            display: block;
+        }
+
+    }
+
+    #team-section {
+
+        form,
+        h1 {
+            display: none;
+        }
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .main-footer {
+        .footer-title {
+            text-align: center;
+            order: 2;
+        }
+
+
+    }
+}
