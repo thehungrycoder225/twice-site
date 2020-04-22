@@ -165,7 +165,7 @@ h3 {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgba(53, 41, 15, 0.5);
+  background: rgba(53, 41, 15, 0.5);
 }
 
 .intro-video {
@@ -351,6 +351,150 @@ h3 {
   padding: 2rem 1rem;
 }
 
+#bulletin-section {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#bulletin-section h1 {
+  font-size: 5rem;
+  font-family: 'Oswald';
+  letter-spacing: 1rem;
+  color: #6F512B;
+  padding: 0 0 20rem 0;
+}
+
+#team-section {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #EEC5CB;
+}
+
+#team-section .form-wrapper {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 40rem;
+          flex: 3 1 40rem;
+  text-align: center;
+}
+
+#team-section .form-wrapper h1 {
+  font-size: 10rem;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  color: #2F260D;
+}
+
+#team-section .form-wrapper label {
+  font-size: 4rem;
+  font-family: 'Oswald';
+  letter-spacing: 0.5rem;
+}
+
+#team-section .form-wrapper #email {
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+#team-section .form-wrapper button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background: #35290F;
+  border: none;
+  color: #EEC5CB;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  font-family: 'Oswald';
+  font-size: 2rem;
+}
+
+#team-section .form-wrapper button:hover {
+  background: #6F512B;
+}
+
+#team-section img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-footer {
+  background-color: #2F260D;
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-footer .footer-title {
+  margin: 1rem;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
+  color: #EEC5CB;
+  font-family: 'Oswald', sans-serif;
+}
+
+.main-footer .footer-social-links {
+  color: #EEC5CB;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-footer .footer-social-links img {
+  width: 2rem;
+}
+
 @-webkit-keyframes introAnimate {
   from {
     opacity: 0;
@@ -454,6 +598,148 @@ h3 {
   }
   to {
     background: rgba(238, 181, 68, 0.5);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  .burger span {
+    padding: 0.2rem 2rem;
+    background: #35290F;
+    margin: 0.5rem 0;
+    display: block;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .nav-open {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .toggle .line1 {
+    -webkit-transform: rotateZ(45deg) translateY(300%);
+            transform: rotateZ(45deg) translateY(300%);
+    background: #00a8cc;
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    -webkit-transform: rotateZ(-45deg) translateY(-300%);
+            transform: rotateZ(-45deg) translateY(-300%);
+    background: #00a8cc;
+  }
+  .nav-items {
+    background: #35290F;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  .nav-items a {
+    color: #EEC5CB;
+    font-size: 1rem;
+    font-size: 10rem;
+  }
+  /* Intro */
+  #intro-section {
+    width: 100%;
+    margin: auto;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.5))), url(../img/bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #intro-section .intro-img img {
+    opacity: 0;
+    -webkit-animation: none;
+            animation: none;
+  }
+  #intro-section a {
+    -webkit-animation: none;
+            animation: none;
+    opacity: 1;
+    -webkit-transform: translate(0%, -600%);
+            transform: translate(0%, -600%);
+  }
+  #intro-section iframe {
+    opacity: 0;
+  }
+  #intro-section h1 {
+    font-size: 5rem;
+    -webkit-animation: none;
+            animation: none;
+    color: #EEC5CB;
+  }
+  /* Gallery */
+  #intro-gallery img {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  #intro-gallery {
+    -ms-grid-columns: (minmax(5rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  }
+  #bulletin-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  #bulletin-section img {
+    opacity: 0;
+  }
+  #team-section button {
+    margin: 1rem;
+  }
+  footer ul {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  footer h2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  html {
+    --header1: 3rem;
+    --header2: 4.5rem;
+    --header3: 3.5rem;
+    --header4: 2.5rem;
+    --text: 2.5rem;
+    --big: 6rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
