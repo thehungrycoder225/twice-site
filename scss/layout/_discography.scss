@@ -1,0 +1,20 @@
+#discography-section {
+    min-height: 100vh;
+    background: white;
+    color: rgb(41, 200, 221);
+    @include flex(row, wrap, center, center);
+    padding: 0 0 3rem 0;
+}
+
+.discography-content {
+    width: 90%;
+    margin: auto;
+    @include flex(row, wrap, center, center);
+    text-align: center;
+
+    img {
+        width: 25rem;
+        object-fit: cover;
+        padding: 2rem 1rem;
+    }
+}

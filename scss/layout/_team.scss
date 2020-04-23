@@ -1,0 +1,43 @@
+#team-section {
+    min-height: 20vh;
+    @include flex(row, wrap, center, space-around);
+    background: #EEC5CB;
+
+    .form-wrapper {
+        flex: 3 1 40rem;
+        text-align: center;
+        transform: translateY(-50%);
+
+        #email {
+            margin: 1rem 0;
+            padding: 1rem 2rem;
+            border: none;
+
+            &:active,
+            &:focus {
+                outline: 3px solid #522D5B;
+            }
+        }
+
+        button {
+            margin-top: 1rem;
+            padding: 1rem 2rem;
+            background: #522D5B;
+            border: 3px solid #522D5B;
+            transition: all ease-in-out 0.3s;
+
+            &:hover {
+                background: #FCB8B8;
+                border: 3px solid #522D5B;
+                color: #522D5B;
+            }
+        }
+    }
+
+    img {
+        flex: 1 1 40rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+}

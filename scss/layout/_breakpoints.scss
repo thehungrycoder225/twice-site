@@ -1,4 +1,63 @@
 @media screen and (max-width:1024px) {
+    #main-header {
+        background: none;
+        box-shadow: none;
+    }
+
+    .logo {
+        display: inline-block;
+    }
+
+    .burger {
+        position: relative;
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger span {
+        padding: 0.2rem 2rem;
+        background: white;
+        margin: 0.5rem 1rem;
+        display: block;
+        transition: all 0.5s ease;
+    }
+
+    .nav-open {
+        transform: translateX(100%);
+    }
+
+    .toggle .line1 {
+        transform: rotateZ(45deg) translateY(300%);
+        background: #00a8cc;
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotateZ(-45deg) translateY(-300%);
+        background: #00a8cc;
+    }
+
+    .nav-links {
+        background: rgb(39, 4, 39);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 100%;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.5s ease;
+    }
+
+    .nav-links a {
+        color: pink;
+        font-size: calc(1rem + 2vw);
+    }
+
+
     #intro-section {
         width: 100%;
         margin: auto;
@@ -11,7 +70,39 @@
         .intro-video {
             display: none;
         }
+
+        .intro-content {
+            .intro-title-container {
+                .heading {
+                    &--main {
+                        font-size: calc(5rem + 2vw);
+                    }
+
+                    &--sub {
+                        font-size: calc(1rem *+ 2vw);
+                        -webkit-text-stroke: 1px white;
+                    }
+                }
+            }
+        }
     }
+
+
+    /* Gallery */
+    .gallery-image-container img {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    #intro-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+
+    //  Discography 
+
+
+
+
 
     #bulletin-section {
         overflow: hidden;
@@ -42,6 +133,8 @@
     }
 
     .main-footer {
+        padding: 1rem;
+
         .footer-title {
             text-align: center;
             order: 2;

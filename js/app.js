@@ -1,15 +1,16 @@
-const nav = document.querySelector(".nav-items");
+const nav = document.querySelector(".nav-links");
 const burger = document.querySelector(".burger");
+const logo = document.querySelector(".logo");
 const links = nav.querySelectorAll("a");
 
-burger.addEventListener("click", () => {
+logo.addEventListener("click", () => {
   nav.classList.toggle("nav-open");
-  burger.classList.toggle("toggle");
+  logo.classList.toggle("toggle");
 });
 
 links.forEach((link) => {
   link.addEventListener("click", () => {
     nav.classList.toggle("nav-open");
-    burger.classList.toggle("toggle");
+    logo.classList.toggle("toggle");
   });
 });

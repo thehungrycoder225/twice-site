@@ -5,7 +5,14 @@
 @import 'base/reset';
 @import 'base/typography';
 
+
+
+
 @import 'layout/navigation';
 @import 'layout/breakpoints';
+@import 'layout/gallery';
+@import 'layout/discography';
+@import 'layout/team';
+@import 'layout/footer';
 
 @import 'pages/home';
